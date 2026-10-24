@@ -2,7 +2,15 @@
 
 This public repository distributes **Windows binaries only**. The XRD source repository remains private.
 
-## Recommended: v4.0.2 Portable
+## Recommended: v4.0.3 Portable — Excel axis labels only
+
+[Download v4.0.3 Portable ZIP](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.3/Rigaku_2D_XRD_v4.0.3_PORTABLE.zip) · [SHA-256 file](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.3/Rigaku_2D_XRD_v4.0.3_PORTABLE.sha256)
+
+Compared with v4.0.2, **the only functional change** is per-sample Excel graph axis labels: X — `Position across tape width (mm)`, Y — `Angle (°)`. Values, points 1–11, series, colors, CSV, XRD algorithms and Stop are unchanged.
+
+Windows portable installation: Extract All / Извлечь все, then open `Rigaku_2D_XRD_v4.0.3.exe` in the extracted folder, leaving `_internal` alongside it. The package passed 64 automated tests, Windows SciPy/Excel tests, GUI startup and extracted-ZIP verification.
+
+## Previous: v4.0.2 Portable
 
 [Download v4.0.2 Portable ZIP](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.2/Rigaku_2D_XRD_v4.0.2_PORTABLE.zip) · [SHA-256 file](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.2/Rigaku_2D_XRD_v4.0.2_PORTABLE.sha256)
 
