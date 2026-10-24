@@ -1,33 +1,18 @@
 # Rigaku 2D XRD — Windows Downloads
 
-This public repository distributes **Windows binaries only**. The XRD source repository remains private.
+## Latest release: v4.0.4
 
-## Recommended: v4.0.4 Portable — readable Excel axes and graph layout
+**[Download Rigaku_2D_XRD_v4.0.4_PORTABLE.zip](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.4/Rigaku_2D_XRD_v4.0.4_PORTABLE.zip)**
 
-[Download v4.0.4 Portable ZIP](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.4/Rigaku_2D_XRD_v4.0.4_PORTABLE.zip) · [SHA-256](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.4/Rigaku_2D_XRD_v4.0.4_PORTABLE.sha256)
+[SHA-256 checksum](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.4/Rigaku_2D_XRD_v4.0.4_PORTABLE.sha256) | [Release notes](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/tag/v4.0.4)
 
-Per-sample charts now explicitly display numeric X ticks from **1 to 11 mm** and Y ticks in degrees. Axes are darker and thicker; gridlines lighter; titles and three-phase legends have reserved space. **All Excel cell values match v4.0.3 exactly** when regenerated from the same 143 Batch 10 measurements. Comparison plots still use Sample IDs on X.
+### Installation / Установка
 
-**Windows installation:** Download ZIP → **Extract All / Извлечь все** → open the extracted `Rigaku_2D_XRD_v4.0.4` folder → run `Rigaku_2D_XRD_v4.0.4.exe`. Keep the `_internal` folder beside it. Reprocess the measurements to regenerate a workbook with new chart formatting.
+1. Download the **ZIP** file; choose **Extract All / Извлечь все** in Windows Explorer.
+2. Open the extracted `Rigaku_2D_XRD_v4.0.4` folder.
+3. Launch `Rigaku_2D_XRD_v4.0.4.exe`. Keep the `_internal` folder beside the EXE.
+4. Import RASX measurements and the optional sample list; process and generate Excel charts.
 
-**Validation:** 71 automated tests passed, Windows CI passed, archived SciPy DLLs and Excel self-test passed, ZIP extraction test passed, public download checksum verified. The 143-point dataset was used to verify output-cell equality, **not remeasured**.
+This update improves the Excel graph axis numbers, position labels, line thickness and separation of labels and legends. It does not change XRD calculations. Portable Windows 64-bit; a Russian README is included in the ZIP.
 
-## Previous: v4.0.3 Portable — Excel axis labels only
-
-[Download v4.0.3 Portable ZIP](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.3/Rigaku_2D_XRD_v4.0.3_PORTABLE.zip) · [SHA-256 file](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.3/Rigaku_2D_XRD_v4.0.3_PORTABLE.sha256)
-
-Compared with v4.0.2, **the only functional change** is per-sample Excel graph axis labels: X — `Position across tape width (mm)`, Y — `Angle (°)`. Values, points 1–11, series, colors, CSV, XRD algorithms and Stop are unchanged.
-
-Windows portable installation: Extract All / Извлечь все, then open `Rigaku_2D_XRD_v4.0.3.exe` in the extracted folder, leaving `_internal` alongside it. The package passed 64 automated tests, Windows SciPy/Excel tests, GUI startup and extracted-ZIP verification.
-
-## Previous: v4.0.2 Portable
-
-[Download v4.0.2 Portable ZIP](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.2/Rigaku_2D_XRD_v4.0.2_PORTABLE.zip) · [SHA-256 file](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.2/Rigaku_2D_XRD_v4.0.2_PORTABLE.sha256)
-
-**Installation:** Right-click ZIP → **Extract All / Извлечь все**. Open the entire extracted folder and double-click Rigaku_2D_XRD_v4.0.2.exe. Keep the _internal folder beside the EXE. Do **not** run from inside ZIP or copy only the EXE. A Russian readme is included.
-
-The 4.0.2 Windows portable package passed all 63 automated tests, Windows SciPy sparse/Excel/plotting self-test, GUI startup, and re-test after extracting the ZIP into a Unicode folder. The XRD processing algorithms match the v4.0.1 source, whose numerical regressions included three real Batch 10 RASX scans. A complete 143-scan reprocessing on the user's Windows system and parity to v3 are still unverified.
-
-## Previous v4.0.1
-
-The old one-file v4.0.1 EXE can fail before the GUI starts with a PyInstaller decompression error for scipy/sparse/_csparsetools.pyd. It is marked as a legacy prerelease and should **not** be chosen over v4.0.2.
+**This is the only currently published version.** Earlier builds were archived privately for recovery. Public downloads do not require signing in to GitHub. The application source code is maintained in a separate private repository.
