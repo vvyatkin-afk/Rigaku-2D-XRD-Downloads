@@ -2,7 +2,17 @@
 
 This public repository distributes **Windows binaries only**. The XRD source repository remains private.
 
-## Recommended: v4.0.3 Portable — Excel axis labels only
+## Recommended: v4.0.4 Portable — readable Excel axes and graph layout
+
+[Download v4.0.4 Portable ZIP](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.4/Rigaku_2D_XRD_v4.0.4_PORTABLE.zip) · [SHA-256](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.4/Rigaku_2D_XRD_v4.0.4_PORTABLE.sha256)
+
+Per-sample charts now explicitly display numeric X ticks from **1 to 11 mm** and Y ticks in degrees. Axes are darker and thicker; gridlines lighter; titles and three-phase legends have reserved space. **All Excel cell values match v4.0.3 exactly** when regenerated from the same 143 Batch 10 measurements. Comparison plots still use Sample IDs on X.
+
+**Windows installation:** Download ZIP → **Extract All / Извлечь все** → open the extracted `Rigaku_2D_XRD_v4.0.4` folder → run `Rigaku_2D_XRD_v4.0.4.exe`. Keep the `_internal` folder beside it. Reprocess the measurements to regenerate a workbook with new chart formatting.
+
+**Validation:** 71 automated tests passed, Windows CI passed, archived SciPy DLLs and Excel self-test passed, ZIP extraction test passed, public download checksum verified. The 143-point dataset was used to verify output-cell equality, **not remeasured**.
+
+## Previous: v4.0.3 Portable — Excel axis labels only
 
 [Download v4.0.3 Portable ZIP](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.3/Rigaku_2D_XRD_v4.0.3_PORTABLE.zip) · [SHA-256 file](https://github.com/vvyatkin-afk/Rigaku-2D-XRD-Downloads/releases/download/v4.0.3/Rigaku_2D_XRD_v4.0.3_PORTABLE.sha256)
 
